@@ -1654,7 +1654,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bird: {fileID: 62797151}
-  _birdDestroyer: {fileID: 0}
   _startScreen: {fileID: 1812033935}
   _endGameScreen: {fileID: 28044716}
   _scoreCounter: {fileID: 1430671953}
@@ -2207,7 +2206,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8281365999732904767, guid: ecad4d6429ebe0f4a822ae57da311f2a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 805407667466753848, guid: ecad4d6429ebe0f4a822ae57da311f2a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

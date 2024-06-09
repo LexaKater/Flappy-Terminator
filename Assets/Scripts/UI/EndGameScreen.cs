@@ -1,4 +1,5 @@
 using System;
+using UnityEngine.SceneManagement;
 
 public class EndGameScreen : Window
 {
@@ -18,5 +19,9 @@ public class EndGameScreen : Window
         WindowGroup.interactable = true;
     }
 
-    protected override void OnButtonClick() => RestartButtonClicked?.Invoke();
+    protected override void OnButtonClick()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        RestartButtonClicked?.Invoke();
+    }
 }
